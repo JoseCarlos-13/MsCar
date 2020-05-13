@@ -7,10 +7,6 @@
     color: white;
 }
 
-a{
-    color: white;
-}
-
 .title{
     color: white;
 }
@@ -38,6 +34,11 @@ a{
 .main-section{
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.link-media{
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 .footer{
