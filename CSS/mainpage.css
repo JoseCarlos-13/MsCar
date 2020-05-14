@@ -9,6 +9,7 @@
 
 .title{
     color: white;
+    margin-right: 50px;
 }
 
 .photo-slide{
@@ -32,8 +33,7 @@
 }
 
 .main-section{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px;
 }
 
 .link-media{
