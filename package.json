@@ -1,0 +1,13 @@
+{
+  "name": "MS-car-diesel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:JoseCarlos-13/MsCar.git",
+  "author": "José Carlos <josecarlosbsilva.17@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@popperjs/core": "^2.4.0",
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1"
+  }
+}
