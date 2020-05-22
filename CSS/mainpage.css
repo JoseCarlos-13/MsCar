@@ -12,7 +12,7 @@
     margin: 5px;
 }
 
-.menu-itens ul li {
+.menu-itens li {
     border-radius: 5px;
     margin-right: 1px;
 }
@@ -24,13 +24,9 @@
     transition: 0.5s;
 }
 
-.main-section{
-    padding: 50px;
-}
-
-.card-list{
-    display: flex;
-    justify-content: space-between;
+.the-list-card-item{
+    background-color: blue;
+    color: White;
 }
 
 .title {
@@ -59,7 +55,6 @@
 
 .icon-media {
     width: 40px;
-    display: block;
     margin-bottom: 10px;
 }
 
@@ -73,9 +68,12 @@
 }
 
 .footer {
-    display: flex;
-    justify-content: space-around;
     background-color: blue;
     color: white;
     padding: 50px;
 }
+
+.list-group-services li{
+    color: white;
+    border: 1px solid white;
+    background-color: darkblue;
