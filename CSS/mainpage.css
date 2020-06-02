@@ -1,3 +1,50 @@
+@font-face{
+    font-family: 'malaga regular';
+    src: url('../assets/Malaga Regular/Malaga Regular.ttf');
+}
+
+.background-logo{
+    background-color: rgb(19, 19, 83);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contacts{
+    color: white;
+    padding: 100px;
+}
+
+.main-logo{
+    margin-top: 250px;
+    margin-bottom: 250px;
+    width: 30%;
+    color: white;
+    padding: 20px;
+    font-size: 400%;
+    font-family: 'malaga regular';
+    border-radius: 20px;
+    text-align: center;
+    background-color: mediumblue;
+}
+
+.main-section {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.photo-slide {
+    height: 640px;
+    width: 1285px;
+}
+
+.footer {
+    background-color: blue;
+    color: white;
+    padding: 50px;
+}
+
 .navbar {
     background-color: blue;
     color: white;
@@ -24,28 +71,15 @@
     transition: 0.5s;
 }
 
-.the-list-card-item{
-    background-color: blue;
-    color: White;
-}
-
 .title {
     margin-right: 10px;
     color: white;
     padding-top: 10px;
     padding-right: 10px;
     padding-left: 10px;
+    font-family: 'malaga regular';
     border-radius: 10px;
-    background-color: darkblue;
-}
-
-.photo-slide {
-    height: 640px;
-    width: 1285px;
-}
-
-.phone-icon{
-    margin: 12px;
+    background-color: rgb(0, 0, 205);
 }
 
 .navbar-toggler {
@@ -58,22 +92,14 @@
     margin-bottom: 10px;
 }
 
-.main-section {
-    margin: 50px;
-}
-
 .link-media {
     margin-top: 5px;
     margin-left: 5px;
 }
 
-.footer {
-    background-color: blue;
-    color: white;
-    padding: 50px;
-}
-
 .list-group-services li{
     color: white;
+    padding: 3px;
     border: 1px solid white;
     background-color: darkblue;
+    padding-left: 15px;
