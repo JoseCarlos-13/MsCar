@@ -52,10 +52,12 @@ h1 {
 
 .service-card h2 {
 	margin-bottom: 10px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid white;
 }
 
 .service-card p {
-	flex-grow: 1;
+	flex-grow: 2;
 }
 
 .main-section {
