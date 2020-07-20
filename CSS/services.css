@@ -129,6 +129,7 @@ h1 {
 
 .link-media a {
 	color: white;
+	word-break: break-all;
 }
 
 .link-media a:hover {
