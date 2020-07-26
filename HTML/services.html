@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <header class="contacts">
+  <div class="contacts">
     <span>
       <svg class="bi bi-geo-alt" width="1.5em" viewBox="0 0 16 16"
         fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -50,42 +50,42 @@
         <path fill-rule="evenodd" 
           d="M14 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
         <path d="M.05 3.555C.017 3.698 0 3.847 0 4v.697l5.803 3.546L0 11.801V12c0 .306.069.596.192.856l6.57-4.027L8 9.586l1.239-.757 6.57 4.027c.122-.26.191-.55.191-.856v-.2l-5.803-3.557L16 4.697V4c0-.153-.017-.302-.05-.445L8 8.414.05 3.555z"/>
-      </svg> <a href="mailto:contato.mscardiesel@gmail.com">
-        contato.mscardiesel@gmail.com
-      </a>
+      </svg> <a href="mailto:contato.mscardiesel@gmail.com">contato.mscardiesel@gmail.com</a>
     </span>
-  </header>
+  </div>
 
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <span class="title">
-        <a href="../HTML/mainpage.html">MS CAR DIESEL</a>
-      </span>
-
-      <button class="navbar-toggler" type="button" 
-        data-toggle="collapse" data-target="#navbarNav" 
-        aria-controls="navbarNav" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <div class="navbar-dark">
-          <span class="navbar-toggler-icon"></span>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <span class="title">
+          <a href="../HTML/mainpage.html">MS CAR DIESEL</a>
+        </span>
+  
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+          data-target="#navbarNav" aria-controls="navbarNav" 
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <div class="navbar-dark">
+            <span class="navbar-toggler-icon"></span>
+          </div>
+        </button>
+        
+        <div class="menu-itens collapse navbar-collapse"  id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../HTML/mainpage.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../HTML/services.html">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../HTML/contact.html">Contato</a>
+            </li>
+          </ul>
         </div>
-      </button>
-      
-      <div class="menu-itens collapse navbar-collapse"  id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="../HTML/mainpage.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../HTML/services.html">Serviços</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../HTML/contact.html">Contato</a>
-          </li>
-        </ul>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <section class="main-section">
     <div class="container">
@@ -197,19 +197,29 @@
   <div class="footer">
     <div class="row justify-content-between">
       <div class="col-md-4" style="margin-bottom: 20px;">
+        <svg class="bi bi-geo-alt" width="1.5em" viewBox="0 0 16 16"
+        fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+      </svg>
         <strong>Endereço:</strong>
         <p>
           Rua Rad. Waldomiro M Barbosa, 2 - Cidade Universitária,
           Maceió - AL, 57072-240, próximo à "Churrascaria Porteira
           Gaúcho"
         </p>
+        <svg width="1.5em" viewBox="0 0 16 16" class="bi bi-clock-fill"
+          fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" 
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+        </svg>
         <strong>Horário de funcionamento:</strong>
         <p>Abre de Segunda a Sexta, das 07:00 às 17:00</p>
       </div>
 
       <div class="col-md-4" style="margin-bottom: 20px;">
         <strong>Serviços:</strong>
-        <ul class="list-group list-group-services" style="list-style: none;">
+        <ul class="list-group list-group-services" 
+          style="list-style: none;">
           <li class="list-group-item">Injeção Eletrônica</li>
           <li class="list-group-item">Câmbio</li>
           <li class="list-group-item">Freio em Geral</li>
@@ -240,14 +250,13 @@
         <div class="link-media">
           <img src="../assets/SocialIcons/gmail.svg"
             class="icon-media">
-            <a href="mailto:contato.mscardiesel@gmail.com" 
-              style="word-break: break-all;">
+            <a href="mailto:contato.mscardiesel@gmail.com">
               contato.mscardiesel@gmail.com
             </a>
         </div>
       </div>
     </div>
-    
+  
     <hr class="separator"></hr>
 
     <p align="center" style="margin-top: 30px;">MS Car Diesel © 2020</p>
