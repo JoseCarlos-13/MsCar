@@ -23,6 +23,10 @@ h1 {
 	overflow: hidden;
 }
 
+.contact a{
+	word-wrap: wrap;
+}
+
 .contacts {
   color: white;
   display: flex;
