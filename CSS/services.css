@@ -136,10 +136,14 @@ h1 {
 	color: white;
 }
 
+.separator {
+	border: 1px solid white;
+}
+
 .list-group-services li{
 	color: white;
 	padding: 3px;
-	border: 1px solid white;
+	border: 2px solid white;
 	background-color: darkblue;
 	padding-left: 15px;
 }
