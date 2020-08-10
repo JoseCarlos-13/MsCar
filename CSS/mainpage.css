@@ -10,8 +10,8 @@ h1 {
 }
 
 .background-logo{
-	background: linear-gradient(to right bottom, black, midnightblue,
-		darkblue, lightblue);
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/imagem-oficina.jpeg');
+  background-repeat: no-repeat;
 	height: 600px;
 	display: flex;
 	flex-direction: column;
@@ -50,7 +50,7 @@ h1 {
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-top: 240px;
-	margin-bottom: 100px;
+	margin-bottom: 120px;
 }
 
 .background-box{
