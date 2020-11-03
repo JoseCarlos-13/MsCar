@@ -33,6 +33,12 @@ gulp.task('minifyLogos', () => {
   .pipe(gulp.dest('./dist/assets/logos'))
 })
 
+gulp.task('minifyLogos', () => {
+  return gulp.src('./src/assets/logos/*')
+  .pipe(gulpImage())
+  .pipe(gulp.dest('./dist/assets/logos'))
+})
+
 gulp.task('minifyHTML', () => {
   return gulp.src('./src/HTML/*.html')
   .pipe(gulpMinifyHTML({ collapseWhitespace: true }))
