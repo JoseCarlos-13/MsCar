@@ -8,10 +8,11 @@
     "gulp-cli": "^2.3.0",
     "gulp-css": "^0.1.0",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-image": "^6.2.1"
+    "gulp-image": "^6.2.1",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.13",
     "gulp": "^4.0.2"
   },
   "scripts": {

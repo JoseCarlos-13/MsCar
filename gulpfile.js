@@ -1,12 +1,15 @@
 const gulp = require('gulp')
+const sass = require('gulp-sass')
 const gulpImage = require('gulp-image')
 const gulpMinifyCSS = require('gulp-css')
 const gulpMinifyHTML = require('gulp-htmlmin')
+sass.compiler = require('node-sass');
 
-gulp.task('minifyCSS', () => {
-  return gulp.src('./src/CSS/*.css')
-  .pipe(gulpMinifyCSS())
-  .pipe(gulp.dest('./dist/CSS'))
+gulp.task('transformSassInCSS', () => {
+  return gulp.src('./src/Sass/*.scss')
+    .pipe(sass())
+    .pipe(gulpMinifyCSS())
+    .pipe(gulp.dest('./dist/CSS'))
 })
 
 gulp.task('minifyBootstrapCSS', () => {
@@ -33,12 +36,6 @@ gulp.task('minifyLogos', () => {
   .pipe(gulp.dest('./dist/assets/logos'))
 })
 
-gulp.task('minifyLogos', () => {
-  return gulp.src('./src/assets/logos/*')
-  .pipe(gulpImage())
-  .pipe(gulp.dest('./dist/assets/logos'))
-})
-
 gulp.task('minifyHTML', () => {
   return gulp.src('./src/HTML/*.html')
   .pipe(gulpMinifyHTML({ collapseWhitespace: true }))
@@ -46,13 +43,24 @@ gulp.task('minifyHTML', () => {
 })
 
 gulp.task('executeAll', 
-  gulp.parallel([
-    'minifyCSS',
+  gulp.series(
+    'transformSassInCSS',
     'minifyHTML',
     'minifyBootstrapCSS', 
     'minifyImages', 
-    'minifyIcons', 
+    'minifyIcons',
     'minifyLogos'
-  ]), () => {
-    gulp.watch(['./src/HTML/*.html', './src/CSS/*.css'])
+  )
+)
+
+gulp.task('reloadHTMLAndCSS', () => {
+  gulp.series(
+    'minifyHTML',
+    'transformSassInCSS'
+  )
 })
+
+gulp.watch([
+  './src/HTML/*.html', 
+  './src/Sass/*.scss'
+], gulp.series('minifyHTML', 'transformSassInCSS'))
