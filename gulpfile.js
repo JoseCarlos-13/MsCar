@@ -3,6 +3,7 @@ const sass = require('gulp-sass')
 const gulpImage = require('gulp-image')
 const gulpMinifyCSS = require('gulp-css')
 const gulpMinifyHTML = require('gulp-htmlmin')
+const liveServer = require('live-server')
 sass.compiler = require('node-sass');
 
 gulp.task('transformSassInCSS', () => {
@@ -14,32 +15,42 @@ gulp.task('transformSassInCSS', () => {
 
 gulp.task('minifyBootstrapCSS', () => {
   return gulp.src('./src/bootstrap/css/*.css')
-  .pipe(gulpMinifyCSS())
-  .pipe(gulp.dest('./dist/bootstrap/css'))
+    .pipe(gulpMinifyCSS())
+    .pipe(gulp.dest('./dist/bootstrap/css'))
 })
 
 gulp.task('minifyImages', () => {
   return gulp.src('./src/assets/imagens/*')
-  .pipe(gulpImage())
-  .pipe(gulp.dest('./dist/assets/imagens'))
+    .pipe(gulpImage())
+    .pipe(gulp.dest('./dist/assets/imagens'))
 })
 
 gulp.task('minifyIcons', () => {
   return gulp.src('./src/assets/SocialIcons/*')
-  .pipe(gulpImage())
-  .pipe(gulp.dest('./dist/assets/SocialIcons'))
+    .pipe(gulpImage())
+    .pipe(gulp.dest('./dist/assets/SocialIcons'))
 })
 
 gulp.task('minifyLogos', () => {
   return gulp.src('./src/assets/logos/*')
-  .pipe(gulpImage())
-  .pipe(gulp.dest('./dist/assets/logos'))
+    .pipe(gulpImage())
+    .pipe(gulp.dest('./dist/assets/logos'))
 })
 
 gulp.task('minifyHTML', () => {
   return gulp.src('./src/HTML/*.html')
-  .pipe(gulpMinifyHTML({ collapseWhitespace: true }))
-  .pipe(gulp.dest('./dist/HTML'))
+    .pipe(gulpMinifyHTML({ collapseWhitespace: true }))
+    .pipe(gulp.dest('./dist/HTML'))
+})
+
+gulp.task('server', () => {
+  const liveBrowser = {
+    port: 8081,
+    open: true,
+    root: './dist',
+    file: '/HTML/mainpage.html'
+  }
+  return liveServer.start(liveBrowser)
 })
 
 gulp.task('executeAll', 
@@ -49,7 +60,8 @@ gulp.task('executeAll',
     'minifyBootstrapCSS', 
     'minifyImages', 
     'minifyIcons',
-    'minifyLogos'
+    'minifyLogos',
+    'server'
   )
 )
 
