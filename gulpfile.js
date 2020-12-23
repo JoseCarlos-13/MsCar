@@ -50,6 +50,7 @@ gulp.task('server', () => {
     root: './dist',
     file: '/HTML/mainpage.html'
   }
+
   return liveServer.start(liveBrowser)
 })
 
