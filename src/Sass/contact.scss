@@ -69,6 +69,18 @@ h1 {
 }
 
 .footer {
+  p {
+    text-shadow: 1px 1px 2px black;
+  }
+
+  strong {
+    text-shadow: 1px 1px 2px black;
+  }
+
+  a {
+    text-shadow: 1px 1px 2px black;
+  }
+
 	background-color: blue;
 	color: white;
 	padding: 50px;
@@ -79,6 +91,7 @@ h1 {
   color: white;
   
   li a {
+    text-shadow: 1px 1px 2px black;
     color: white;
   }
 }

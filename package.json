@@ -11,7 +11,9 @@
     "gulp-image": "^6.2.1",
     "gulp-sass": "^4.1.0",
     "live-server": "^1.2.1",
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "webpack": "^5.12.3",
+    "webpack-cli": "^4.3.1"
   },
   "devDependencies": {
     "gulp": "^4.0.2"
