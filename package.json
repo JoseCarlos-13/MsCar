@@ -6,17 +6,17 @@
   "dependencies": {
     "bootstrap": "^4.5.3",
     "gulp-cli": "^2.3.0",
-    "gulp-css": "^0.1.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-image": "^6.2.1",
     "gulp-sass": "^4.1.0",
+    "gulp-webserver": "^0.9.1",
+    "ip": "^1.1.5",
     "live-server": "^1.2.1",
-    "node-sass": "^5.0.0",
-    "webpack": "^5.12.3",
-    "webpack-cli": "^4.3.1"
+    "node-sass": "^5.0.0"
   },
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,7 +25,7 @@
     "type": "git",
     "url": "git+https://github.com/JoseCarlos-13/MsCar.git"
   },
-  "author": "J.Carlos",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JoseCarlos-13/MsCar/issues"
