@@ -1,7 +1,7 @@
 const gulp = require('gulp')
 const sass = require('gulp-sass')
 const gulpImage = require('gulp-image')
-const gulpMinifyCSS = require('gulp-css')
+const gulpMinifyCSS = require('gulp-clean-css')
 const gulpMinifyHTML = require('gulp-htmlmin')
 const liveServer = require('live-server')
 sass.compiler = require('node-sass');
@@ -45,7 +45,8 @@ gulp.task('minifyHTML', () => {
 
 gulp.task('server', () => {
   const liveBrowser = {
-    port: 8081,
+    port: 8080,
+    host: "192.168.0.15",
     open: true,
     root: './dist',
     file: '/HTML/mainpage.html'
