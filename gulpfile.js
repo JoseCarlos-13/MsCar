@@ -56,12 +56,12 @@ gulp.task('server', () => {
   return liveServer.start(liveBrowser)
 })
 
-gulp.task('executeAll', 
+gulp.task('executeAll',
   gulp.series(
     'transformSassInCSS',
     'minifyHTML',
-    'minifyBootstrapCSS', 
-    'minifyImages', 
+    'minifyBootstrapCSS',
+    'minifyImages',
     'minifyIcons',
     'minifyLogos',
     'server'
@@ -76,6 +76,6 @@ gulp.task('reloadHTMLAndCSS', () => {
 })
 
 gulp.watch([
-  './src/HTML/*.html', 
+  './src/HTML/*.html',
   './src/Sass/*.scss'
 ], gulp.series('minifyHTML', 'transformSassInCSS'))
