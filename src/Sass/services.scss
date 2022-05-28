@@ -21,21 +21,24 @@ h1 {
 }
 
 .contacts {
+  list-style: none;
+  margin: 0px;
   color: white;
   display: flex;
-  text-align: center;
   font-size: smaller;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: {
+    top: 10px;
+    right: 50px;
+    bottom: 10px;
+    left: 50px;
+  }
   background-color: darkblue;
   justify-content: space-evenly;
-  padding-left: 50px;
-  padding-right: 50px;
   border-bottom: 1px solid white;
 
-  a{
+  a {
     color: white;
     font-family: $font-open-sans;
   }
@@ -72,8 +75,10 @@ h1 {
 }
 
 .main-section {
-	margin-top: 100px;
-	margin-bottom: 150px;
+  margin: {
+    top: 150px;
+    bottom: 450px;
+  }
 }
 
 .footer {
@@ -97,7 +102,7 @@ h1 {
 .navbar {
 	background-color: blue;
   color: white;
-  
+
   li a {
     text-shadow: 1px 1px 2px black;
     color: white;
@@ -131,7 +136,7 @@ h1 {
 	margin-right: 30px;
 	font-family: 'malaga regular';
   border-radius: 10px;
-  
+
   a{
     color: white;
     font-size: 30px;
@@ -142,17 +147,21 @@ h1 {
   }
 }
 
+.contact {
+  list-style: none;
+  margin-bottom: 20px;
 
-.icon-media {
-	width: 40px;
-	margin-bottom: 10px;
-}
+  .link-media {
+    margin-top: 5px;
+    margin-left: 5px;
+    color: white;
 
-.link-media {
-	margin-top: 5px;
-	margin-left: 5px;
-  color: white;
-  
+    .icon-media {
+      width: 40px;
+      margin-bottom: 10px;
+    }
+  }
+
   a {
     color: white;
     word-break: break-all;
@@ -163,14 +172,22 @@ h1 {
   }
 }
 
+.address {
+  list-style: none;
+}
+
 .separator {
 	border: 1px solid white;
 }
 
-.list-group-services li{
-	color: white;
-	padding: 3px;
-	border: 2px solid white;
-	background-color: darkblue;
-	padding-left: 15px;
+.list-group-services {
+  margin-bottom: 20px;
+
+  li {
+    color: white;
+    padding: 3px;
+    border: 2px solid white;
+    background-color: darkblue;
+    padding-left: 15px;
+  }
 }
