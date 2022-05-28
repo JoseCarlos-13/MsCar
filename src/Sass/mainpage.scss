@@ -11,48 +11,51 @@ h1 {
   margin-bottom: 50px;
 }
 
-.background-logo{
+.background-logo {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/imagens/imagem-oficina.png');
   background-repeat: no-repeat;
-	height: 600px;
+  height: 900px;
 }
 
 .contacts {
+  list-style: none;
+  margin: 0px;
   color: white;
   display: flex;
-  text-align: center;
   font-size: smaller;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: {
+    top: 10px;
+    right: 50px;
+    bottom: 10px;
+    left: 50px;
+  }
   background-color: darkblue;
   justify-content: space-evenly;
-  padding-left: 50px;
-  padding-right: 50px;
   border-bottom: 1px solid white;
 
-  a{
+  a {
     color: white;
     font-family: $font-open-sans;
   }
 }
 
-.main-logo{
+.main-logo {
 	margin-top: 100px;
 	color: white;
 	font-size: 80px;
 	font-family: 'malaga regular';
 }
 
-.main-section {
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 240px;
-	margin-bottom: 120px;
+section {
+  margin: {
+    top: 950px;
+    bottom: 950px;
+  }
 }
 
-.background-box{
+.background-box {
 	background-color: darkblue;
 	color: white;
 	padding: 30px;
@@ -97,8 +100,12 @@ h1 {
 
 .menu-itens {
   ul {
-    margin-left: 10px;
-    margin: 5px;
+    margin: {
+      left: 10px;
+      top: 5px;
+      right: 5px;
+      bottom: 5px;
+    }
   }
 
   li {
@@ -118,37 +125,43 @@ h1 {
 	font-family: 'malaga regular';
   border-radius: 10px;
 
-  a{
+  a {
     color: white;
     font-size: 30px;
   }
 
-  a:hover{
+  a:hover {
     text-decoration: none;
   }
 }
 
-.logos-cars{
+.logos-cars {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
   flex-wrap: wrap;
+  list-style: none;
 
-  .logo-car{
+  .logo-car {
     width: 180px;
     margin-top: 20px;
     margin-bottom: 70px;
   }
 }
 
-.link-media {
-	margin-top: 5px;
-	margin-left: 5px;
-  color: white;
+.contact {
+  list-style: none;
+  margin-bottom: 20px;
 
-  .icon-media {
-    width: 40px;
-    margin-bottom: 10px;
+  .link-media {
+    margin-top: 5px;
+    margin-left: 5px;
+    color: white;
+
+    .icon-media {
+      width: 40px;
+      margin-bottom: 10px;
+    }
   }
 
   a {
@@ -161,14 +174,22 @@ h1 {
   }
 }
 
+.address {
+  list-style: none;
+}
+
 .separator {
 	border: 1px solid white;
 }
 
-.list-group-services li{
-	color: white;
-	padding: 3px;
-	border: 2px solid white;
-	background-color: darkblue;
-	padding-left: 15px;
+.list-group-services {
+  margin-bottom: 20px;
+
+  li {
+    color: white;
+    padding: 3px;
+    border: 2px solid white;
+    background-color: darkblue;
+    padding-left: 15px;
+  }
 }
