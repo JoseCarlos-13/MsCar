@@ -1,7 +1,7 @@
 {
   "name": "ms-car-diesel",
   "version": "1.0.0",
-  "description": "",
+  "description": "a",
   "main": "gulpfile.js",
   "dependencies": {
     "bootstrap": "^4.5.3",
@@ -23,6 +23,10 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JoseCarlos-13/MsCar.git"
+  },
+  "engines": {
+    "npm": "6.14.16",
+    "node": "12.22.12"
   },
   "author": "",
   "license": "ISC",
