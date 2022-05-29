@@ -1,7 +1,7 @@
 {
   "name": "ms-car-diesel",
   "version": "1.0.0",
-  "description": "",
+  "description": "a",
   "main": "gulpfile.js",
   "dependencies": {
     "bootstrap": "^4.5.3",
