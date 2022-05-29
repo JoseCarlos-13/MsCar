@@ -48,10 +48,24 @@ h1 {
 	font-family: 'malaga regular';
 }
 
+.first-section {
+  background-color: darkblue;
+  padding: 50px;
+  color: white;
+  margin: {
+    top: 250px;
+    bottom: 50px;
+    left: auto;
+    right: auto;
+  }
+}
+
 section {
   margin: {
-    top: 950px;
-    bottom: 950px;
+    top: 250px;
+    bottom: 200px;
+    left: auto;
+    right: auto;
   }
 }
 
@@ -141,11 +155,13 @@ section {
 	justify-content: space-around;
   flex-wrap: wrap;
   list-style: none;
-
+  margin-left: -50px;
   .logo-car {
-    width: 180px;
-    margin-top: 20px;
-    margin-bottom: 70px;
+    width: 200px;
+    margin: {
+      top: 20px;
+      bottom: 70px;
+    }
   }
 }
 
