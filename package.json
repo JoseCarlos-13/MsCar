@@ -10,6 +10,7 @@
     "gulp-cli": "^2.3.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-image": "^6.2.1",
+    "gulp-jsmin": "^0.1.5",
     "gulp-sass": "^4.1.0",
     "ip": "^1.1.5",
     "live-server": "^1.2.1",
@@ -20,7 +21,7 @@
     "gulp-clean-css": "^4.3.0"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "gulp executeAll",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
