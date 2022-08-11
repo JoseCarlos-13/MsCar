@@ -20,7 +20,7 @@
     "gulp-clean-css": "^4.3.0"
   },
   "scripts": {
-    "start": "gulp executeAll",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
