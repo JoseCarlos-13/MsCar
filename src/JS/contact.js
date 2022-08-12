@@ -4,7 +4,7 @@ let nav_list = [
   { link: "../HTML/contact.html", label: "Contato" }
 ]
 
-let services_list = [
+  let services_list = [
   { label: "Injeção Eletrônica" },
   { label: "Câmbio" },
   { label: "Freio em Geral" },
@@ -14,18 +14,6 @@ let services_list = [
   { label: "Troca de Óleo" },
   { label: "Parte Elétrica" },
   { label: "Embuchamento Dianteiro" }
-]
-
-let service_cards_list = [
-  { title: "Injeção Eletrônica", paragraph: "Sistema que envia o combustível para o motor de maneira controlada. Alguns de seus benefícios são a melhora do rendimento do motor e menor emissão de gases poluentes." },
-  { title: "Câmbio", paragraph: "Transfere da potência fixa do motor, mais força e velocidade para os pneus conforme a necessidade do motorista. Possui 4 tipos de câmbio: manual, automático, automático sequencial e CVT (Transmissão Continuamente Variável)." },
-  { title: "Freio em Geral", paragraph: "Item de segurança que funciona, basicamente, por meio da conversão de pressão mecânica em hidráulica, usando um circuito fechado de fluido de freio desde o cilindro mestre até os cilindros ou pinças hidráulicas ligadas às rodas." },
-  { title: "Diferencial", paragraph: "Peça de engrenagem que possibilita que carros que usam motor a combustão, possam realizar qualquer curva. Essa peça faz com que cada roda gire de forma independente, sem deixar de receber o torque do motor." },
-  { title: "Motor", paragraph: "Conhecido como 'o coração do veículo', a função principal do motor é transformar combustível em energia capaz de gerar movimento no automóvel, utilizando a combustão interna." },
-  { title: "Suspensão", paragraph: "Sistema composto por diversos elementos flexíveis, responsável pela estabilidade do veículo em tempo integral, promover conforto aos passageiros, manter  as quatro rodas no chão e auxiliar no desempenho do carro." },
-  { title: "Troca de Óleo", paragraph: "Procedimento considerado indispensável para o bom funcionamento do motor e sua durabilidade. É recomendado ser feito para obter uma lumbrificação melhor no motor." },
-  { title: "Parte Elétrica", paragraph: "Composta por: Bateria, Fiações, Alternador e Dependentes elétricos, é responsável por alimentar os componentes elétricos do veículo.  Sem ela, é impossível que o carro funcione sem energia." },
-  { title: "Embuchamento Dianteiro", paragraph: "Consiste em recuperar todas as características originais para que o veículo tenha de volta toda sua capacidade elástica. Além de melhorar o desempenho da suspensão, também é possível aumentar a vida útil dos pneus." },
 ]
 
 let contacts_list = [
@@ -71,9 +59,10 @@ let addresses_list = [
 
 let navbar_nav_ul = document.querySelector('.navbar-nav')
 let services_list_ul = document.querySelector('.list-group-services')
-let contacts_list_ul = document.querySelector('.contact')
 let addresses_list_ul = document.querySelector('.address')
-let services_cards_list_ul = document.querySelector('.service-cards')
+let contacts_footer_list_ul = document.querySelector('.contact-footer')
+
+
 
 const to_create_nav_itens = () => {
   navbar_nav_ul.innerHTML = nav_list.map(item =>
@@ -91,7 +80,7 @@ const to_create_services_list = () => {
 };to_create_services_list()
 
 const to_create_contacts_list = () => {
-  contacts_list_ul.innerHTML = contacts_list.map(contact =>
+  contacts_footer_list_ul.innerHTML = contacts_list.map(contact =>
     `<li class="link-media">
       <img src="${contact.icon}" class="icon-media">
       <a href="${contact.link}">${contact.label}</a>
@@ -113,14 +102,3 @@ const to_create_addresses_list = () => {
       <p>${address.paragraph}</p>
     </li>`).join("")
 };to_create_addresses_list()
-
-const to_create_service_cards_list = () => {
-  services_cards_list_ul.innerHTML = service_cards_list.map(service_card =>
-    `<li class="card service-card">
-      <span class="card-body">
-      <h2>${service_card.title}</h2>
-
-      <p>${service_card.paragraph}</p>
-      </span>
-    </li>`).join("")
-};to_create_service_cards_list()
