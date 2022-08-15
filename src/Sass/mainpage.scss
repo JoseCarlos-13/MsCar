@@ -149,21 +149,23 @@ section {
   }
 }
 
-.logos-cars {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-  flex-wrap: wrap;
-  list-style: none;
-  margin-left: -50px;
-  .logo-car {
-    width: 200px;
-    margin: {
-      top: 20px;
-      bottom: 70px;
+.logo-cars {
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: -50px;
+    .logo-car {
+      width: 200px;
+      margin: {
+        top: 20px;
+        bottom: 70px;
+        left: 50px;
+        right: 50px;
+      }
     }
   }
-}
 
 .contact {
   list-style: none;
